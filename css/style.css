@@ -1,0 +1,725 @@
+/* Inicio de Instruções para a importação de fontes externas*/
+
+@font-face{
+    font-family: manrope-bold;
+    src: url(../font/Manrope-Bold.ttf);
+}
+
+@font-face{
+    font-family: manrope-regular;
+    src: url(../font/Manrope-Regular.ttf);
+}
+
+@font-face{
+    font-family: manrope;
+    src: url(../font/Manrope.ttf);
+}
+
+@font-face{
+    font-family: unisans;
+    src: url(../font/uni-sans.heavy-caps.otf);
+}
+
+/* Fim de Instruções para a importação de fontes externas*/
+
+/* Inicio de Instruções da área "Header" do Website*/
+
+.bg-daimond{
+    background: rgb(1,27,123);
+	background: linear-gradient(180deg, rgba(1,27,123,1) 4%, rgba(2,19,67,1) 100%);
+    color: #ffffff !important;
+    height: 90px;
+}
+
+.espaco-top{
+	height: 90px;
+}
+
+.bg-daimond a{
+    color: #ffffff !important;
+    margin: 0px 10px 0px 0px;
+    font-family: manrope;
+	transition: 0.2s linear;
+}
+
+.bg-daimond a:hover{
+	color: #f59912 !important;
+}
+
+#navbar-principal-daimond a:hover{
+    color: #f59912;
+}
+
+.navbar-brand img{
+    height: 60px;
+}
+
+.nav-link.active{
+    color: #FAB420 !important;
+}
+
+.nav-link.contato{
+    background: rgb(255,156,0) !important;
+	background: linear-gradient(180deg, rgba(255,156,0,1) 4%, rgba(241,116,6,1) 100%) !important;
+	border-radius: 3px;
+	padding-right: 1rem !important;
+    padding-left: 1rem !important;
+	-webkit-box-shadow: -9px 8px 18px 0px rgba(0, 0, 0, 0.6);
+	-moz-box-shadow:    -9px 8px 18px 0px rgba(0, 0, 0, 0.6);
+	box-shadow:         -9px 8px 18px 0px rgba(0, 0, 0, 0.6);
+	position: relative;
+	top: 0;
+	right: 0;
+	transition: linear 0.2s !important;
+	border: none !important;
+	font-family: manrope !important;
+	color: #FFF !important;
+	margin-right: 10px;
+}
+
+.nav-link.contato:hover{
+    background-color: #ed9404 !important;
+    color: rgb(0,23,96) !important;
+	-webkit-box-shadow: -9px 8px 18px 0px rgba(0, 0, 0, 0.0);
+	-moz-box-shadow:    -9px 8px 18px 0px rgba(0, 0, 0, 0.0);
+	box-shadow:         -9px 8px 18px 0px rgba(0, 0, 0, 0.0);
+	position: relative;
+	top: 2px;
+	right: 2px;
+}
+
+.icon-link-social img{
+	height: 40px;
+}
+
+.icon-link-social{
+	margin: 0 !important;
+	padding: 0 !important;
+}
+
+@media only screen and (max-width : 1200px) {
+    .navbar-collapse {
+		background: rgb(1,27,123);
+		background: linear-gradient(180deg, rgba(1,27,123,1) 4%, rgba(2,19,67,1) 100%);
+		padding: 10px 20px 20px 20px;
+		text-align: center;
+	}
+}
+
+/* Fim de Instruções da área "Header" do Website*/
+
+/* Inicio de Instruções da área "Apresentação" do Website*/
+#Inicio{
+	height: 100vh;
+	background-image: url(../img/BG-Inicio.png);
+	background-size: cover;
+	background-position: center;
+}
+
+#Inicio img{
+	width: 80%;
+}
+
+#Inicio p{
+	color: #FFF;
+	font-family: manrope;
+	font-size: 24px;
+	text-align: center;
+	width: 70%;
+}
+
+.aviso-inicio{
+	color: #FFF;
+	font-family: manrope;
+	font-size: 21px;
+	text-align: center;
+	width: 20%;
+	border: 2px solid #FFF;
+	padding: 5px 10px;
+	margin-top: 60px;
+	animation: animacao-pula 3s infinite;
+	position: relative;
+}
+
+.aviso-inicio:hover{
+	color: #021655;
+	background-color: #FFF;
+	cursor: pointer;
+}
+
+.section-inicio{
+	margin: 0;
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 80%;
+}
+
+/* Instruções de adptação mobile*/
+@media only screen and (max-width: 800px) {
+	#Inicio img{
+		width: 100%;
+	}
+	.section-inicio{
+		width: 100% !important;
+	}
+	#Inicio p{
+		font-size: 20px !important;
+	}
+	.aviso-inicio {
+		width: 80% !important;;
+	}
+}
+
+/* Fim de Instruções da área "Apresentação" do Website*/
+
+/* Inicio de Instruções da área "Vantagens" do Website*/
+
+.titulo{
+    text-align: center;
+    font-family: unisans;
+    color: #021655;
+    font-size: 50px;
+}
+
+.subtitulo{
+    color: #333333;
+    text-align: center;
+    font-family: manrope;
+    font-size: 22px;
+    position: relative;
+    bottom: 8px;
+	padding-bottom: 20px;
+}
+
+.img-sessao-inicio{
+	width: 100%;
+	position: relative;
+	bottom: 100px;
+	z-index: 1;
+}
+
+.img-sessao-fim{
+	position: relative;
+	bottom: 101px !important;
+}
+
+#vantagens{
+	background-color: #f6f6f6;
+	padding-bottom: 100px;
+	padding-top: 30px;
+}
+
+.correcao-overflow{
+	overflow: hidden;
+	width: 100%;
+}
+
+.vantagem-box{
+	background-color: #FFF;
+	width: 100%;
+	height: 120px;
+	margin-bottom: 30px;
+	-webkit-box-shadow: -4px 3px 27px 0px rgba(50, 50, 50, 0.4);
+	-moz-box-shadow: -4px 3px 27px 0px rgba(50, 50, 50, 0.4);
+	box-shadow: -4px 3px 27px 0px rgba(50, 50, 50, 0.4);
+	z-index: 1000;
+}
+
+.vantagem-icon{
+	background-color: #021655;
+	height: 100%;
+	display: inline-block;
+	float: left;
+}
+
+.vantagem-icon img{
+	height: 100%;
+}
+
+.vantagem-article{
+	padding-left: 15px;
+	padding-top: 10px;
+	float: left;
+}
+
+.vantagem-article h3{
+	font-family: manrope-bold;
+	font-weight: 900;
+	width: 370px;
+	position: relative;
+	font-size: 25px
+}
+
+.vantagem-article p{
+	font-family: manrope-regular;
+	width: 370px;
+	position: relative;
+	bottom: 5px;
+	line-height: 20px;
+}
+
+/* Instruções de adptação mobile*/
+
+@media only screen and (max-width: 970px) {
+	.img-sessao-inicio {
+		position: relative;
+		bottom: 80px;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.img-sessao-inicio {
+		position: relative;
+		bottom: 60px;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	.img-sessao-inicio {
+		position: relative;
+		bottom: 50px;
+	}
+	.vantagem-article p{
+		width: 230px;
+		font-size: 14px;
+	}
+	.vantagem-article h3{
+		width: 230px;
+		font-size: 18px;
+		padding-top: 5px;
+	}
+	.vantagem-article{
+		padding-left: 10px;
+		padding-right: 10px;
+		padding-top: 5px;
+	}
+}
+
+/* Fim de Instruções da área "Vantagens" do Website*/
+
+.section-energiasolar{
+    height: 230px;
+    background: linear-gradient(163deg, rgba(226,129,0,1) 4%, rgba(238,176,0,1) 100%);
+    border-radius: 10px;
+    -webkit-box-shadow: -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow:    -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+    box-shadow:         -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+	padding: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+	.section-energiasolar{
+		display: none;
+	}
+	
+	.espaco-grupo{
+		margin-top: 40px !important;
+	}
+}
+
+.section-energiasolarinf{
+    min-height: 230px;
+    background: #FFF;
+    border-radius: 10px;
+    -webkit-box-shadow: -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+    -moz-box-shadow:    -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+    box-shadow:         -26px 24px 20px 0px rgba(0, 0, 0, 0.62);
+	padding: 20px;
+}
+
+
+.espaco-grupo{
+	margin-top: 80px;
+}
+
+.section-energiasolar img{
+	width: 100%;
+}
+
+.figure-img-total{
+	width: 100%;
+	background: linear-gradient(163deg, rgba(226,129,0,1) 4%, rgba(238,176,0,1) 100%);
+}
+
+.titulo-solares{
+	background: linear-gradient(163deg, rgba(226,129,0,1) 4%, rgba(238,176,0,1) 100%);
+	text-align: center;
+	padding: 10px 0px;
+	font-family: manrope;
+	font-size: 30px !important;
+}
+
+.esp-fix{
+	padding: 0px;
+	overflow: hidden;
+}
+
+.esp-fix p{
+	padding: 15px 30px;
+	font-size: 18px;
+	line-height: 30px;
+	font-weight: 350;
+}
+
+/* Inicio de Instruções da área "Sobre" do Website*/
+
+#sobre{
+	min-height: 900px;
+	background-image: url(../img/BG-Sobre.png);
+	background-size: cover;
+	background-position: center;
+	padding-top: 99px;
+	padding-bottom: 99px;
+}
+
+.titulo-alt-color-1{
+	color: #f98c02;
+}
+
+.titulo-alt-color-2{
+	color: #FFF;
+}
+
+.img-logo-sobre{
+	width: 60%;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.texto-sobre{
+	font-family: manrope-regular;
+	color: #FFF;
+	font-size: 16px;
+	text-align: justify;
+}
+
+.texto-sobre h3{
+	font-family: manrope-bold;
+	font-weight: bold;
+}
+
+.equipe{
+	text-align: center;
+	margin: 0 auto 50px auto;
+	width: 100%;
+	display: block;
+	max-width: 80%;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+.equipe img{
+	width: 100%;
+}
+
+/* Instruções de adaptação mobile*/
+
+@media only screen and (max-width: 900px) {
+	.img-logo-sobre{
+		display: none;
+	}
+	.texto-sobre h3{
+		text-align: center !important;
+	}
+}
+
+/* Fim de Instruções da área "Sobre" do Website*/
+
+/* Inicio de Instruções da área "Apresentação" do Website*/
+
+#apresentacao{
+	background-color: #FFF;
+	-webkit-box-shadow: 0px -22px 29px 0px rgba(0, 0, 0, 0.62);
+	-moz-box-shadow:    0px -22px 29px 0px rgba(0, 0, 0, 0.62);
+	box-shadow:         0px -22px 29px 0px rgba(0, 0, 0, 0.62);
+	z-index: 1000;
+}
+
+.img-apresentacao{
+	border-radius: 7px;
+}
+
+.container-mobile-correction{
+	padding: 0px 40px !important;
+}
+
+.aviso-apresentacao{
+	font-family: manrope-bold;
+	color: #333333;
+	font-size: 16px;
+	text-align: center;
+	padding-bottom: 60px;
+}
+
+.owl-carousel .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 5px;
+    border-radius: 50%;
+    background: #bdbdbd;
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+    background: #00219b;
+}
+
+.carousel-correction-pers .owl-dots {
+    padding-bottom: 20px;
+}
+.owl-carousel .owl-dots {
+    text-align: center;
+}
+
+/* Instruções de adaptação mobile*/
+
+@media only screen and (max-width: 900px) {
+	.aviso-apresentacao{
+		font-size: 12px;
+	}
+	.carousel-correction-pers .owl-dots {
+		padding-top: 20px;
+	}
+}
+
+/* Fim de Instruções da área "Apresentação" do Website*/
+
+/* Inicio de Instruções da área "Contato" do Website*/
+
+.img-contato{
+	width: 80%;
+	display:block;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+
+@media only screen and (max-width: 900px) {
+	.img-contato{
+		padding-top: 0px;
+	}
+}
+
+.form-contato{
+	background-color: #FFF;
+	padding: 30px;
+	font-family: manrope;
+	display: block;
+	width: 100%;
+	border-radius: 6px;
+	margin-top: 10px;
+}
+
+.form-contato .btn{
+	background-color: #0024c6 !important;
+	border: none;
+}
+
+.form-contato label{
+	color: #2b2b2b;
+}
+
+.form-contato p{
+	color: #0024c6;
+	font-weight: bold;
+	font-size: 22px;
+	border-bottom: solid 3px #0024c6;
+}
+
+.Contato{
+	background-image: url(../img/BG-Contato.png);
+	min-height: 600px;
+	background-attachment: fixed;
+	padding: 50px 0px;
+	padding-bottom: 60px;
+	z-index: 1;
+	overflow: hidden;
+}
+
+.map-contato{
+	width: 100%;
+	height: 300px;
+	padding: 10px;
+	background-color: #FFF;
+}
+
+.titulo-maps{
+	text-align: center;
+    font-family: unisans;
+    color: #021655;
+	padding: 5px;
+	background-color: #FFF;
+	margin-top: 60px;
+}
+
+.subtitulo-maps{
+	text-align: center;
+    font-family: manrope;
+    color: #FFF;
+	padding: 5px;
+}
+
+/* Fim de Instruções da área "Contato" do Website*/
+
+/* Inicio de Instruções da área "Contato de Orçamento" do Website*/
+
+#orcamento{
+	background-color: #ffa103;
+	padding: 50px 0px 25px 0px;
+	background-image: url(../img/BG-Orcamento.png);
+	text-align: center;
+	-webkit-box-shadow: -1px 0px 30px 0px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:    -1px 0px 30px 0px rgba(0, 0, 0, 0.4);
+	box-shadow:         -1px 0px 30px 0px rgba(0, 0, 0, 0.4);
+}
+
+#orcamento #bntorcamento{
+	background-color: #FFF;
+	text-align: center;
+	font-family: unisans;
+	font-size: 30px;
+	text-decoration: none;
+	padding: 8px 25px;
+	display: inline-block;
+	border-radius: 3px;
+	margin: 15px 0px 35px 0px;
+	color: #021655;
+	-webkit-box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0.57);
+	-moz-box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0.57);
+	box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0.57);
+	position: relative;
+	transition: 0.3s;
+	top:0;
+	right:0;
+	border: none !important;
+}
+
+#orcamento #bntorcamento:hover{
+	top: 7px;
+	right: 10px;
+	-webkit-box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0);
+	-moz-box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0);
+	box-shadow: -26px 19px 30px 0px rgba(50, 50, 50, 0);
+}
+
+#orcamento #bntorcamento:active, #orcamento #bntorcamento:focus, #orcamento #bntorcamento:before, #orcamento #bntorcamento:after{
+	border: none !important;
+}
+
+.personalizacaoformext h1{
+	font-family: unisans !important;
+	line-height: 3rem !important;
+	font-size: 3rem !important;
+	margin-bottom: 50px !important;
+}
+
+.personalizacaoformext p{
+	font-family: manrope-bold !important;
+	font-size: 1.2rem !important;
+}
+
+.personalizacaoformext header{
+	margin-bottom: 2rem !important;
+}
+
+@media only screen and (max-width: 900px) {
+	#orcamento #bntorcamento{
+		font-size: 22px;
+	}
+	
+	.sub-orcamento{
+		font-size: 16px;
+	}
+}
+
+/* Fim de Instruções da área "Contato de Orçamento" do Website*/
+
+/* Inicio de Instruções da área "Rodapé" do Website*/
+footer{
+	background: linear-gradient(180deg, rgba(1,9,53,1) 4%, rgba(1,13,82,1) 100%);
+	padding: 130px 0px 120px 0px;
+	overflow: hidden;
+}
+
+footer p{
+	text-align: center;
+}
+
+.img-rod-insta{
+	float: right;
+	height: 60px;
+}
+
+.img-rod-whats{
+	height: 60px;
+}
+
+.final{
+	background-color: #000826;
+	padding: 20px;
+	font-family: manrope;
+	color: #FFF;
+	text-align: center;
+}
+
+.final a:hover{
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+	.img-rod-insta{
+		float: none;
+		height: 60px;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.img-rod-whats{
+		float: none;
+		height: 60px;
+		display: block;
+		margin: 10px auto 0px auto;
+	}
+	
+	.final{
+		font-size: 16px;
+	}
+}
+
+/* Fim de Instruções da área "Rodapé" do Website*/
+
+#rodape_whats {
+    width: 60px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    padding-bottom: 10px;
+    text-align: right;
+    z-index: 1000;
+}
+
+/* Inicio de contrução de animações*/
+
+@keyframes animacao-pula {
+  0%{
+    bottom: 0;
+  }
+  5%{
+    bottom: 20px;
+  }
+  10%{
+    bottom: 0;
+  }
+  15%{
+    bottom: 5px;
+  }
+  20%{
+    bottom: 0;
+  }
+  100%{
+    bottom: 0;
+  }
+}
